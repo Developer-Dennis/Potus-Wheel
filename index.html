@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/pw-favicon.png" type="image/x-icon">
+    <title>Potter's Wheel</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+           <div id="logo">
+            <img src="assets/pw-favicon.png" alts="" id="logo"> Potter's Wheel
+           </div>
+
+            <ul>
+                <li class="nav-link" onclick=showHome() >Home</li>
+                <li class="nav-link" onclick=showProjects() >Projects</li>
+            </ul>
+        </nav>
+    </header>
+        <main class="container">
+                <div id="home">
+                    <img src="assets/potter-pic.jpg" alt="">
+                        <div>
+                            <h2>Clay Mfinyanzi</h2><br><span>Founder, Potter's Wheel</span>
+
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sed rerum temporibus quibusdam similique id! Voluptas non debitis quos facere id, ipsum eaque eligendi, culpa voluptates eum distinctio, tenetur quae?</p>
+                        </div>
+                </div>
+                <div id="projects">
+                    <div class="joined1">
+                        <div>
+                            <img class="pics" src="assets/pic1.jpg">
+                            <h1>First to be moulded </h1><br><span>Moulder, Joe Rogan</span>
+                        </div>
+                           
+                        <div>
+                          <img class="pics" src="assets/pic2.jpg">
+                          <h1>First to be moulded </h1><br><span>Moulder, Linus Torvalds</span>                        </div>
+                           
+                            
+                    </div>
+                
+                 <div class="joined2">
+                    <div>
+                        <img class="pics" src="assets/pic3.jpg">
+                        <h1>First to be moulded </h1><br><span>Moulder, Joe Washingtomn</span>
+                    </div>
+                   
+                      
+                        
+                    <div>
+                        <img class="pics" src="assets/pic4.jpg">
+                     <h1>First to be moulded </h1><br><span>Moulder, Larry freeman</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            Potter's Wheel &copy; 2022 | All Rights Reserved
+    
+         </footer>
+    <!-- <script src="index.js"></script> -->
+<script>
+        var home = document.getElementById("home");
+var projects=document.getElementById("projects");
+
+
+function showHome(){
+    projects.style.display = "none";
+    home.style.display = "flex";
+}
+
+
+function showProjects(){
+    projects.style.display = "block";
+    home.style.display = "none";
+ }
+    </script> 
+</body>
+</html>
